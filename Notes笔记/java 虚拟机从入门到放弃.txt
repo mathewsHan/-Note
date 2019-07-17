@@ -1,0 +1,5 @@
+方法区：(Method  area )：又叫 永久代（pernament  generation) 
+
+运行时常量池--方法区的一部分
+
+直接内存（Direct Memory） 堆外内存 

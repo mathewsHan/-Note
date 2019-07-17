@@ -1,0 +1,69 @@
+网页播放加速插件
+videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(1.5)
+
+java  开发技能:
+
+幂等性:前段约束
+
+【菜单-帮助-markdown语法示例】
+//----------java-----------
+深拷贝浅拷贝
+浅拷贝：创建一个新对象，然后将当前对象的非静态字段复制到该对象，
+如果字段类型是值类型（基本类型）的，那么对该字段进行复制；如果字段是引用类型的，
+则只复制该字段的引用而不复制引用指向的对象。此时新对象里面的引用类型字段相当于是原始对象里面引用类型字段的一个副本，原始对象与新对象里面的引用字段指向的是同一个对象。
+
+深拷贝: 有两种方法
+第一种: 内部引用对象也实现
+第二种:深拷贝-序列化方式#
+这种方式其实就是将对象转成二进制流，然后再把二进制流反序列成一个java对象，
+这时候反序列化生成的对象是一个全新的对象，里面的信息与原对象一样，但是所有内容都是一份新的。
+这种方式需要注意的地方主要是所有类都需要实现Serializable接口，以便进行序列化操作
+
+//---------------ArrayList 
+核心问题： grow 扩容  1.5呗旧的长度扩容
+JDK  1.6之前  初始长度为10 
+从JDK1.7开始，调用无参构造时，只会创建一个空数组。
+只有调用ArrayList.add()或addAll()方法时，才会初始化数组的容量。
+
+//concurrentHahsMap
+
+key.hasCode() 控制整形数的范围
+
+//----------------------
+集群应用方案 
+
+
+//**********mybatis**********
+mybatis相关:
+
+通过 mybatis 配置文件 得到 sqlsessionFactory
+
+通过 SqlSessionFactory 得到  sqlsession 
+
+sqlSession 通过底层的Executor
+
+MappedStatement 是通过  Mapper.xml 中的  statement生成的对象 
+参数输入执行 并输出结果集 ，无需手动判断 参数类型和参数下标位置 
+
+
+//-----------java 虚拟机------
+
+除了   heap 和 method area(方法区) 是共享的
+类加载器
+执行引擎
+本地接口 
+
+官方文档  ,一般不要使用百度
+面试:     专业精神   996ICUVeryGood
+
+//**********mybatis**********
+mybatis相关:
+
+通过 mybatis 配置文件 得到 sqlsessionFactory
+
+通过 SqlSessionFactory 得到  sqlsession 
+
+sqlSession 通过底层的Executor
+
+MappedStatement 是通过  Mapper.xml 中的  statement生成的对象 
+参数输入执行 并输出结果集 ，无需手动判断 参数类型和参数下标位置 
